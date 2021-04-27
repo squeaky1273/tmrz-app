@@ -7,6 +7,7 @@ import { addTimer } from '../actions'
 
 export default function NewTimer() {
 	const [ name, setName ] = useState('')
+	// const [ description, setDescription ] = useState('')
 	const dispatch = useDispatch()
 
 	return (
@@ -17,6 +18,12 @@ export default function NewTimer() {
 				name="name"
 				value={name}
 				onChange={(e) => setName(e.target.value)}/>
+			{/* <input
+				type='text'
+				placeholder="New Timer Description"
+				name="description"
+				value={description}
+				onChange={(e) => setDescription(e.target.value)}/> */}
 			<button
 				onClick={() => dispatch(addTimer(name))}
 			>Save</button>

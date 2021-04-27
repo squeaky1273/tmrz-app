@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import { toggleTimer } from '../actions'
 import { formatTime } from '../utils';
 import './TimerView.css'
+import ResetTimerButton from './ResetTimerButton'
 
 export default function TimerView(props) {
   // Extract these specific props to use in the component
@@ -13,12 +14,14 @@ export default function TimerView(props) {
   return (
     <div className="TimerView">
       <h2>{timer.name}</h2>
+      {/* <h3>{timer.description}</h3> */}
       <h1>{formatTime(timer.time)}</h1>
       <button
         onClick={() => dispatch(toggleTimer(index))}
       >
         {timer.isRunning ? "Stop" : "Start"}
       </button>
+      <ResetTimerButton />
     </div>
   )
 }
