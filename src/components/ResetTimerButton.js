@@ -1,5 +1,6 @@
 import { resetTimer } from '../actions';
 import { useDispatch } from 'react-redux'
+import './ResetTimerButton.css'
 
 function ResetTimerButton() {
     const dispatcher = useDispatch()

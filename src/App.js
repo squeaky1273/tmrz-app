@@ -28,7 +28,9 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>TMRZ</h1>
+        <header className="App-header">
+          <h1>TMRZ</h1>
+        </header>
         {/* Display the new components */}
         <NewTimer />
         <ListTimers />

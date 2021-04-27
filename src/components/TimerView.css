@@ -17,7 +17,7 @@
 	flex: 1;
 }
 
-.TimerView > button {
+.timer-view__button {
 	padding: 0.25rem 0.5rem;
 	border-radius: 0.5rem;
 	border: 1px solid #000;
@@ -26,4 +26,15 @@
 	font-size: 1rem;
 	font-weight: bold;
 	width: 4rem;
+  }
+
+
+.timer-view__button--start {
+	color: #fff;
+	background-color: rgb(44, 194, 69);
+}
+  
+.timer-view__button--stop {
+	color: #fff;
+	background-color: rgb(198, 41, 41);
 }
